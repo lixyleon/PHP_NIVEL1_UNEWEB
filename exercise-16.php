@@ -1,31 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <title>variables en php</title>
+    <title>Ejemplo con palabra reservada echo</title>
 </head>
+
 <body>
-    <h1>Variables en php</h1>
-<?php
-    $texto='Hola mundo';
-    $x=25;
-    $y=13.25;
-    echo $texto;
-    //S15numero las variables no pueden iniciar con numeros
-    $precio_abr15=17.5;
+    <h1>Ejemplo con palabra reservada echo</h1>
+    <?php
+    echo '<h2>PHP es divertido</h2>';
+    echo 'Hola mundo <br>';
+    echo "I'm living in Venezuela <br>";
+    echo'Ella me dijo "buenos dias " y yo le dije Hola <br>';
+    echo "Esta ", "Cadena de caracteres ", "puede ", "contener ", "múltiples ", "parámetros";
+
     ?>
-    <br>
-<?php
-    echo $x;
-    echo '<br>';
-    echo $y;
-    echo $precio_abr15;
-?>
+
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
 </body>
+
 </html>
