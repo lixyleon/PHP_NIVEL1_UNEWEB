@@ -5,20 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <title>salida y concatenacion de variables</title>
+
+    <title>Constantes en php</title>
 </head>
 <body>
-    <h1>Variables en php</h1>
-<?php
-    $texto='programar';
+    <?php
     
-    echo 'Yo amo $texto <br>'; //esto genera un error por el uso de la comilla simple para lectura de variable
-    // para tomar el valor intepretado de la variable se usará comillas dobles
+    define("CUMPLEANIOS",'Feliz cumpleaños a ti ');
+    echo CUMPLEANIOS;
+    echo '<br>';
+    define("ANIVERSARIO",'Feliz aniversario a ti ',true);
+    echo aniversario;
 
-    echo "Yo amo $texto";
- 
+    echo '<br>';
+    // creacion de constantes de arreglos
+
+    define("CARROS",[
+        "BMW",
+        "Chevrolet",
+        "Toyota"
+    ]);
+
+    echo CARROS[1];
+    echo '<br>';
+    //
+    define("REFLEXION",'Por el cumpleaños se regala un carro ');
+    echo REFLEXION;
+
+    /*function miPrueba(){
+        echo REFLEXION;
+    }
+
+    miPrueba();
+
+
+    //ejercicio de funciones
+    echo '<br>';
+
+    function suma($numero1,$numero2){
+        echo $numero1+$numero2;
+    }
+
+    suma(3,7);*/
+    
+
+    function miPrueba(){
+        echo REFLEXION.carros[1].ANIVERSARIO;
+    }
+
+    miPrueba();
+
     ?>
-   
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
